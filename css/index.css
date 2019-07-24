@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: -webkit-gradient(linear, right top, left top, from(rgba(87, 83, 83, 0.459)), to(rgba(199, 199, 199, 0.589))), url("../tayoStanding.jpg");
+  background: linear-gradient(to left, rgba(87, 83, 83, 0.459), rgba(199, 199, 199, 0.589)), url("../tayoStanding.jpg");
+  background-position: center;
+  background-size: cover;
+  padding-right: 10vw;
+  padding-top: 13vh;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+body main {
+  text-align: right;
+}
+
+body main h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4em;
+  font-weight: lighter;
+  color: white;
+}
+
+body main b {
+  font-size: 1.3em;
+  font-family: "Roboto Mono", monospace;
+  color: white;
+}
+
+body main p {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 1.3em;
+  line-height: 1.52em;
+  margin: 2em 0;
+  text-align: left;
+}
+
+body main .button {
+  width: 80%;
+  text-align: left;
+}
+
+body main .button button {
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 1vw 8vw;
+  margin-bottom: 2em;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+
+body main .social {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (6%)[4];
+      grid-template-columns: repeat(4, 6%);
+  grid-column-gap: 3px;
+}
+
+body main .social img {
+  width: 20px;
+}
+
+/* Tablet */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../tayoStanding.jpg");
+    background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../tayoStanding.jpg");
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  body main {
+    padding-left: 1em;
+  }
+  body main p {
+    width: 70%;
+  }
+  body main h1 {
+    text-align: left;
+  }
+  body main b {
+    text-align: left;
+    display: block;
+  }
+}
+
+/* Mobile */
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../tayoStanding.jpg");
+    background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../tayoStanding.jpg");
+    background-position: center;
+    background-size: cover;
+    display: inline-block;
+    height: auto;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  main {
+    padding-left: 1em;
+  }
+  main b {
+    text-align: left;
+    display: inline-block;
+  }
+  main h1 {
+    text-align: left;
+  }
+  main .button button {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=index.css.map */
