@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins|Roboto+Mono&display=swap" rel="stylesheet"> 
+    <link href="https://s3.amazonaws.com/www-inside-design/static/css/fonts.css" rel="stylesheet"/>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins|Roboto+Mono&display=swap" rel="stylesheet">  -->
     <link rel="stylesheet" href="./css/index.css">
     <title>Tayo Aina</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-
+    <div class="body">
     <div class="box">
 
     </div>
@@ -20,18 +22,50 @@
                 Filmmaker & Photographer currently residing in Lagos Nigeria. I love talking about tech startups and businesses. I run a youtube channel; Tayo Aina Films
         </p>
         <div class="button">
-            <button>BIZ INQUIRY</button>
+            <button id="inquiry">BIZ INQUIRY</button>
             <button>VIMEO</button>
             <button>PODCAST</button>
         </div>
        
 
         <div class="social">
-            <img src="./youtube.svg" alt="">
-            <img src="./instagram.svg" alt="">
-            <img src="./twitter.svg" alt="">
-            <img src="./facebook.svg" alt="">
+            <a target="_blank" href="https://www.youtube.com/Tayo%20Aina%20films"><img src="./youtube.svg" alt="Youtube"></a>
+            <a target="_blank" href="https://www.instagram.com/tayoainafilms/?hl=en"><img src="./instagram.svg" alt="Instagram"></a> 
+            <a target="_blank" href="https://twitter.com/tayoainafilms"><img src="./twitter.svg" alt="Twitter"></a>
+            <a target="_blank" href="https://web.facebook.com/tayoainafilms/?_rdc=1&_rdr"><img src="./facebook.svg" alt="Facebook"></a>
         </div>
     </main>
+</div>
+    <div class="form">
+        <span class="cancel">X</span>
+        <h1>Send A Message. I'll get to you <b>ASAP</b></h1>
+        <form method="POST" action="https://formspree.io/tayo@tayoaina.com">
+            <input type="email" name="email" placeholder="Your email">
+            <textarea name="message" placeholder="Test Message"></textarea>
+            <button type="submit">Send Test</button>
+        </form>
+    </div>
+
+    <script>
+
+    let cancelBttn = $(".cancel")
+    let inquiry = document.getElementById("inquiry");
+    
+    
+
+    inquiry.addEventListener("click", () => {
+        $(".form").show(200);
+        $(".body").css({background: "#fff"})
+    })
+
+    cancelBttn.on("click", () => {
+        $(".form").hide(230);
+        $(".body").css({background: ""})
+
+    })
+
+
+
+    </script>
 </body>
 </html>

@@ -3,9 +3,9 @@
   padding: 0;
 }
 
-body {
-  background: -webkit-gradient(linear, right top, left top, from(rgba(87, 83, 83, 0.459)), to(rgba(199, 199, 199, 0.589))), url("../tayoStanding.jpg");
-  background: linear-gradient(to left, rgba(87, 83, 83, 0.459), rgba(199, 199, 199, 0.589)), url("../tayoStanding.jpg");
+.body {
+  background: -webkit-gradient(linear, right top, left top, color-stop(40%, #4747479c), to(rgba(240, 240, 240, 0.192))), url("../tayoStanding.jpg");
+  background: linear-gradient(to left, #4747479c 40%, rgba(240, 240, 240, 0.192)), url("../tayoStanding.jpg");
   background-position: center;
   background-size: cover;
   padding-right: 10vw;
@@ -15,27 +15,29 @@ body {
   display: grid;
   -ms-grid-columns: 50% 50%;
       grid-template-columns: 50% 50%;
+  height: 100vh;
+  position: relative;
 }
 
-body main {
+.body main {
   text-align: right;
 }
 
-body main h1 {
+.body main h1 {
   font-family: "Times New Roman", Times, serif;
   font-size: 4em;
   font-weight: lighter;
   color: white;
 }
 
-body main b {
+.body main b {
   font-size: 1.3em;
-  font-family: "Roboto Mono", monospace;
   color: white;
+  font-family: "Maison Neue", sans-serif;
 }
 
-body main p {
-  font-family: "Poppins", sans-serif;
+.body main p {
+  font-family: "Maison Neue", sans-serif;
   color: white;
   font-size: 1.3em;
   line-height: 1.52em;
@@ -43,12 +45,12 @@ body main p {
   text-align: left;
 }
 
-body main .button {
+.body main .button {
   width: 80%;
   text-align: left;
 }
 
-body main .button button {
+.body main .button button {
   background-color: transparent;
   border: 2px solid white;
   border-radius: 5px;
@@ -59,21 +61,101 @@ body main .button button {
   font-weight: bolder;
 }
 
-body main .social {
+.body main .social {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (6%)[4];
       grid-template-columns: repeat(4, 6%);
   grid-column-gap: 3px;
+  text-align: left;
 }
 
-body main .social img {
+.body main .social:hover a {
+  opacity: 0.5;
+}
+
+.body main .social img {
   width: 20px;
+}
+
+.body main .social a {
+  display: block;
+}
+
+.body main .social a:hover {
+  opacity: 1;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 0.31s;
+  transition: 0.31s;
+}
+
+body .form {
+  width: 40vw;
+  margin: 3em auto;
+  background: white;
+  font-family: "Maison Neue", sans-serif;
+  display: block;
+  height: 60vh;
+  padding: 5vh 3vw;
+  text-align: right;
+  -webkit-box-shadow: 0px 0px 10px 0px #e2e2e2;
+          box-shadow: 0px 0px 10px 0px #e2e2e2;
+  position: absolute;
+  top: 0;
+  left: 30vw;
+}
+
+body .form .cancel {
+  position: absolute;
+  top: 0;
+  font-size: 2em;
+  display: inline-block;
+  padding: 8px;
+  background-color: black;
+  color: white;
+  font-family: "Maison Neue", sans-serif;
+  right: 0;
+  border-radius: 0 0 2px 2px;
+  cursor: pointer;
+  text-align: right;
+}
+
+body .form h1 {
+  font-size: 1.2em;
+  text-align: left;
+  padding: 0vh 2vw;
+}
+
+body .form input, body .form textarea, body .form button {
+  display: block;
+  border: 1.2px solid black;
+  margin: 2em;
+  font-family: "Maison Neue", sans-serif;
+}
+
+body .form input, body .form textarea {
+  padding: 7px 9px;
+  width: 70%;
+  border-radius: 2px;
+}
+
+body .form textarea {
+  height: 26vh;
+}
+
+body .form button {
+  background-color: black;
+  color: white;
+  padding: 9px 12px;
+  font-family: "Maison Neue", sans-serif;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 /* Tablet */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-  body {
+  .body {
     background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../tayoStanding.jpg");
     background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../tayoStanding.jpg");
     background-position: center;
@@ -83,24 +165,28 @@ body main .social img {
     background-repeat: no-repeat;
     height: 100vh;
   }
-  body main {
+  .body main {
     padding-left: 1em;
   }
-  body main p {
+  .body main p {
     width: 70%;
   }
-  body main h1 {
+  .body main h1 {
     text-align: left;
   }
-  body main b {
+  .body main b {
     text-align: left;
     display: block;
+  }
+  body .form {
+    width: 70%;
+    display: none;
   }
 }
 
 /* Mobile */
 @media (min-width: 320px) and (max-width: 480px) {
-  body {
+  .body {
     background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../tayoStanding.jpg");
     background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../tayoStanding.jpg");
     background-position: center;
@@ -110,18 +196,32 @@ body main .social img {
     background-repeat: no-repeat;
     height: 100vh;
   }
-  main {
+  body .form {
+    width: 90%;
+    display: none;
+    margin: 0;
+    left: 3vw;
+    top: 10vh;
+  }
+  body main {
     padding-left: 1em;
   }
-  main b {
+  body main b {
     text-align: left;
     display: inline-block;
   }
-  main h1 {
+  body main h1 {
     text-align: left;
   }
-  main .button button {
+  body main .button button {
     width: 100%;
+  }
+  body main .social {
+    display: block;
+  }
+  body main .social a {
+    display: block;
+    margin-right: 2em;
   }
 }
 /*# sourceMappingURL=index.css.map */
