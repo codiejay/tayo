@@ -104,6 +104,7 @@ body .form {
   position: absolute;
   top: 0;
   left: 30vw;
+  display: none;
 }
 
 body .form .cancel {
@@ -189,7 +190,7 @@ body .form button {
   .body {
     background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../tayoStanding.jpg");
     background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../tayoStanding.jpg");
-    background-position: center;
+    background-position: left;
     background-size: cover;
     display: inline-block;
     height: auto;

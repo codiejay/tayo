@@ -11,6 +11,8 @@ $poppins: 'Poppins', sans-serif;;
     padding: 0;
 }
 
+
+
 .body{
     background: linear-gradient(to left, #4747479c  40%, rgba(240, 240, 240, 0.192) ) , url("../tayoStanding.jpg");
     background-position: center;
@@ -22,6 +24,9 @@ $poppins: 'Poppins', sans-serif;;
     grid-template-columns: 50% 50%;
     height: 100vh;
     position: relative;
+
+
+    // MAIL PAGE STYLE
 
 
     main{
@@ -105,6 +110,7 @@ $poppins: 'Poppins', sans-serif;;
 
 body{
     .form{
+       
         width: 40vw;
         margin: 3em auto;
         background: rgb(255, 255, 255);
@@ -117,6 +123,7 @@ body{
         position: absolute;
         top: 0;
         left: 30vw;
+        display: none;
 
         .cancel{
             position: absolute;

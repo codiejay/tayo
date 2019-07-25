@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://s3.amazonaws.com/www-inside-design/static/css/fonts.css" rel="stylesheet"/>
+   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-firestore.js"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tayo's Mails</title>
+    <link rel="stylesheet" href="./css/mail.css">
+</head>
+
+
+<body>
+    <main id="mailBox">
+        
+    </main> 
+</body>
+
+<!-- <script src="./index.js"></script> -->
+
+<script>
+// Supply the mails here
+ var firebaseConfig = {
+    apiKey: "AIzaSyAUV7fEjX-SUcX2l3o_xHqI5CWOO-4j1n8",
+    authDomain: "tayoaina-f9081.firebaseapp.com",
+    databaseURL: "https://tayoaina-f9081.firebaseio.com",
+    projectId: "tayoaina-f9081",
+    storageBucket: "tayoaina-f9081.appspot.com",
+    messagingSenderId: "718770936154",
+    appId: "1:718770936154:web:78c15c51c8e0b14c"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  const dataBase = firebase.firestore()
+dataBase.collection("mails")
+    .get()
+    .then( (dataSnapShot) => {
+       if(dataSnapShot.size !== 0){
+         dataSnapShot.forEach( (data) => {
+             console.log(data.data())
+             $("#mailBox").append(
+                 `<div class="mail">
+            <h1>${data.data().usersName}</h1>
+            <h1>My Email <b> <a href="mailto:${data.data().userEmail}" target="_top"> ${data.data().userEmail} </a></b></h1>
+            <p>
+                <b>My Message</b>
+                ${data.data().userMessage}
+            </p>
+        </div> `
+             )
+         } )
+       }
+    } )
+    
+</script>
+</html>

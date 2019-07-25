@@ -8,6 +8,10 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Poppins|Roboto+Mono&display=swap" rel="stylesheet">  -->
     <link rel="stylesheet" href="./css/index.css">
     <title>Tayo Aina</title>
+    
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.1/firebase-firestore.js"></script>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
@@ -39,33 +43,16 @@
     <div class="form">
         <span class="cancel">X</span>
         <h1>Send A Message. I'll get to you <b>ASAP</b></h1>
-        <form method="POST" action="https://formspree.io/tayo@tayoaina.com">
-            <input type="email" name="email" placeholder="Your email">
-            <textarea name="message" placeholder="Test Message"></textarea>
-            <button type="submit">Send Test</button>
+        <form>
+            <input type="text" id="mailEmail" name="email" placeholder="Your email">
+            <input type="text" id="mailName" placeholder="Your Name">
+            <textarea name="message" id="mailMessage" placeholder="Test Message"></textarea>
+            <button id="mailSubmit" >Send Message</button>
         </form>
+
+       
     </div>
 
-    <script>
-
-    let cancelBttn = $(".cancel")
-    let inquiry = document.getElementById("inquiry");
-    
-    
-
-    inquiry.addEventListener("click", () => {
-        $(".form").show(200);
-        $(".body").css({background: "#fff"})
-    })
-
-    cancelBttn.on("click", () => {
-        $(".form").hide(230);
-        $(".body").css({background: ""})
-
-    })
-
-
-
+    <script src="./index.js">
     </script>
-</body>
-</html>
+</body></html>
