@@ -4,8 +4,8 @@
 }
 
 .body {
-  background: -webkit-gradient(linear, right top, left top, color-stop(40%, #4747479c), to(rgba(240, 240, 240, 0.192))), url("../tayoStanding.jpg");
-  background: linear-gradient(to left, #4747479c 40%, rgba(240, 240, 240, 0.192)), url("../tayoStanding.jpg");
+  background: -webkit-gradient(linear, right top, left top, color-stop(40%, #4747479c), to(rgba(240, 240, 240, 0.192))), url("../tayoStanding-min.jpg");
+  background: linear-gradient(to left, #4747479c 40%, rgba(240, 240, 240, 0.192)), url("../tayoStanding-min.jpg");
   background-position: center;
   background-size: cover;
   padding-right: 10vw;
@@ -17,6 +17,13 @@
       grid-template-columns: 50% 50%;
   height: 100vh;
   position: relative;
+}
+
+.body a {
+  text-decoration: none;
+  color: inherit;
+  font-family: "Maison Neue", sans-serif;
+  cursor: pointer;
 }
 
 .body main {
@@ -59,6 +66,7 @@
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: bolder;
+  cursor: pointer;
 }
 
 .body main .social {
@@ -97,7 +105,7 @@ body .form {
   font-family: "Maison Neue", sans-serif;
   display: block;
   height: 60vh;
-  padding: 5vh 3vw;
+  padding: 8vh 3vw;
   text-align: right;
   -webkit-box-shadow: 0px 0px 10px 0px #e2e2e2;
           box-shadow: 0px 0px 10px 0px #e2e2e2;
@@ -105,6 +113,17 @@ body .form {
   top: 0;
   left: 30vw;
   display: none;
+}
+
+body .form form p {
+  margin-top: 2em;
+  text-align: left;
+  line-height: 1.5em;
+  font-size: 1.2em;
+}
+
+body .form form p b {
+  display: block;
 }
 
 body .form .cancel {
@@ -123,9 +142,11 @@ body .form .cancel {
 }
 
 body .form h1 {
-  font-size: 1.2em;
+  font-size: 1.62em;
   text-align: left;
   padding: 0vh 2vw;
+  margin-top: 4em;
+  text-align: left;
 }
 
 body .form input, body .form textarea, body .form button {
@@ -216,6 +237,9 @@ body .form button {
   }
   body main .button button {
     width: 100%;
+  }
+  body main .button a {
+    display: block;
   }
   body main .social {
     display: block;

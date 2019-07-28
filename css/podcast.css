@@ -1,0 +1,111 @@
+* {
+  font-family: "Maison Neue", sans-serif;
+}
+
+* body #podcast main {
+  width: 50%;
+  margin: 0 auto;
+  font-family: "Maison Neue", sans-serif;
+  padding-top: 3em;
+}
+
+* body #podcast main h1 {
+  font-size: 3em;
+  width: 80%;
+}
+
+* body #podcast main h1 #yellow {
+  color: #222222;
+  font-size: 0.41em;
+  display: block;
+}
+
+* body #podcast main p {
+  font-size: 1.5em;
+  line-height: 1.4em;
+}
+
+* body #podcast main button {
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: left;
+  padding: 0px 13px;
+  width: 18vw;
+  position: relative;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 0px 10px 0.1px black;
+          box-shadow: 0px 0px 10px 0.1px black;
+}
+
+* body #podcast main button:before {
+  content: "";
+  width: 30px;
+  height: 30px;
+  right: 20%;
+  top: 20%;
+  display: block;
+  background: url("..//play-button.svg");
+  background-size: cover;
+  position: absolute;
+}
+
+* body #podcast main button h1 {
+  display: inline-block;
+  font-size: 20px;
+  width: 70%;
+}
+
+* body #podcast main button img {
+  width: 40px;
+}
+
+* body #podcast main .podcastChannels {
+  margin-top: 2em;
+}
+
+* body #podcast main .podcastChannels img {
+  width: 6%;
+  margin-right: 0.9em;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body #podcast main {
+    width: 70%;
+  }
+  body #podcast main h1 {
+    width: 90%;
+  }
+  body #podcast main h1 #yellow {
+    display: block;
+  }
+  body #podcast main p {
+    margin-bottom: 3em;
+  }
+  body #podcast main button {
+    width: 30vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body #podcast main {
+    width: 90%;
+  }
+  body #podcast main h1 {
+    width: 90%;
+    font-size: 2.2em;
+  }
+  body #podcast main h1 #yellow {
+    display: block;
+  }
+  body #podcast main p {
+    margin-bottom: 3em;
+  }
+  body #podcast main button {
+    width: 70vw;
+  }
+  body #podcast main .podcastChannels {
+    width: 220%;
+  }
+}
+/*# sourceMappingURL=podcast.css.map */

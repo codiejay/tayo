@@ -1,0 +1,139 @@
+*{
+    font-family: "Maison Neue", sans-serif;
+   body{
+       #podcast{
+           
+            main{
+                width: 50%;
+                margin: 0 auto;
+                font-family: "Maison Neue", sans-serif;
+                padding-top: 3em;
+
+                    h1{
+                        font-size: 3em;
+                        width: 80%;
+
+                          #yellow{
+                            color: rgb(34, 34, 34);
+                            font-size: 0.41em;
+                            display: block;
+                            
+                        }
+                    }
+                      
+
+                    p{
+                        font-size: 1.5em;
+                        line-height: 1.4em;
+                    }
+
+                    button{
+                        background-color: black;
+                        border: none;
+                        color: white;
+                        text-align: left;
+                        padding: 0px 13px;
+                        width: 18vw;
+                        position: relative;
+                        cursor: pointer;
+                        box-shadow: 0px 0px 10px 0.1px rgb(0, 0, 0);
+
+                       
+
+                        
+                        &:before{
+                            content: "";
+                            width: 30px;
+                            height: 30px;
+                            right: 20%;
+                            top: 20%;
+                            display: block;
+                            background: url("..//play-button.svg");
+                            background-size: cover;
+                            position: absolute;
+                        }
+                        
+                        h1{
+                            display: inline-block;
+                            font-size: 20px;
+                            width: 70%;
+                        }
+                        img{
+                            width: 40px;
+                        }
+                    }
+
+                    .podcastChannels{
+                        margin-top: 2em;
+                        img{
+                            width: 6%;
+                            margin-right: 0.9em;
+                        }
+                    }
+                    }
+            }
+       }
+   }
+
+
+
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+
+    body{
+        #podcast{
+            main{
+                width: 70%;
+
+              h1{
+                    width: 90%;
+
+                  #yellow{
+                      display: block;
+                  }
+              }
+
+              p{
+                  margin-bottom: 3em;
+              }
+
+              button{
+                  width: 30vw;
+              }
+            }
+        }
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    body{
+        #podcast{
+            main{
+                width: 90%;
+
+              h1{
+                    width: 90%;
+                    font-size: 2.2em;
+
+                  #yellow{
+                      display: block;
+                  }
+              }
+
+              p{
+                  margin-bottom: 3em;
+              }
+
+              button{
+                  width: 70vw;
+              }
+
+              .podcastChannels{
+                  width: 220%;
+              }
+            }
+        }
+    }
+
+}
