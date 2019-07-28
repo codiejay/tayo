@@ -209,7 +209,8 @@ body .form button {
 /* Mobile */
 @media (min-width: 320px) and (max-width: 480px) {
   .body {
-    background:linear-gradient(to left, #4747479c  40%, rgba(240, 240, 240, 0.192) ) , url("../tayoStanding-min.jpg");
+    background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../tayoStanding-min.jpg");
+    background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../tayoStanding-min.jpg");
     background-position: left;
     background-size: cover;
     display: inline-block;
@@ -251,7 +252,7 @@ body .form button {
     display: block;
   }
   body main .social {
-    display: block;
+    display: none;
   }
   body main .social a {
     display: block;
