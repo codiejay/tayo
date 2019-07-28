@@ -235,6 +235,16 @@ body .form button {
   body main h1 {
     text-align: left;
   }
+  body main b {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+  body main p {
+    text-align: left;
+    width: 70%;
+  }
   body main .button button {
     width: 100%;
   }
@@ -247,6 +257,10 @@ body .form button {
   body main .social a {
     display: block;
     margin-right: 2em;
+  }
+  body main .social a img {
+    display: inline-block;
+    margin-right: 60px;
   }
 }
 /*# sourceMappingURL=index.css.map */

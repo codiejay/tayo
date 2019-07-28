@@ -97,6 +97,7 @@ $poppins: 'Poppins', sans-serif;;
             a{
                 display: block;
 
+
                 &:hover{
                     opacity: 1;
                     transform: scale(1.2);
@@ -289,6 +290,18 @@ body{
             h1{
                 text-align: left;
             }
+
+            b{
+                text-align: left;
+                padding: 0;
+                margin: 0;
+                display: block;
+            }
+
+            p{
+                text-align: left;
+                width: 70%;
+            }
     
             .button{
                 
@@ -307,6 +320,11 @@ body{
                 a {
                    display: block;
                    margin-right: 2em;
+
+                   img{
+                       display: inline-block;
+                       margin-right: 60px;
+                   }
                 }
                 
             }
