@@ -12,7 +12,9 @@ let inquiry = document.getElementById("inquiry");
 
 
 
-inquiry.addEventListener("click", () => {
+inquiry.addEventListener("click", (e) => {
+
+    e.preventDefault();
     $(".form").show(200);
     $(".body").css({background: "#fff"})
 })

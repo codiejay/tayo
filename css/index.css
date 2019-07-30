@@ -6,10 +6,10 @@
 .body {
   background: -webkit-gradient(linear, right top, left top, color-stop(40%, #4747479c), to(rgba(240, 240, 240, 0.192))), url("../tayoStanding-min.jpg");
   background: linear-gradient(to left, #4747479c 40%, rgba(240, 240, 240, 0.192)), url("../tayoStanding-min.jpg");
-  background-position: center;
+  background-position: top;
   background-size: cover;
   padding-right: 10vw;
-  padding-top: 13vh;
+  padding-top: 20vh;
   text-align: center;
   display: -ms-grid;
   display: grid;
@@ -27,34 +27,40 @@
 }
 
 .body main {
-  text-align: right;
+  text-align: left;
+  padding-left: 1em;
 }
 
 .body main h1 {
   font-family: "Times New Roman", Times, serif;
-  font-size: 6em;
+  font-size: 87px;
   font-weight: lighter;
   color: white;
+  text-align: left;
 }
 
 .body main b {
   font-size: 1.3em;
   color: white;
+  text-align: left;
+  display: block;
+  letter-spacing: 2px;
   font-family: "Maison Neue", sans-serif;
 }
 
 .body main p {
   font-family: "Maison Neue", sans-serif;
   color: white;
-  font-size: 1.8em;
+  font-size: 15px;
   line-height: 1.52em;
   margin: 2em 0;
   text-align: left;
 }
 
 .body main .button {
-  width: 80%;
-  text-align: left;
+  width: 10     0%;
+  text-align: right;
+  margin: initial 0;
 }
 
 .body main .button button {
@@ -75,7 +81,7 @@
   -ms-grid-columns: (6%)[4];
       grid-template-columns: repeat(4, 6%);
   grid-column-gap: 3px;
-  text-align: left;
+  text-align: right;
 }
 
 .body main .social:hover a {
@@ -96,6 +102,63 @@
           transform: scale(1.2);
   -webkit-transition: 0.31s;
   transition: 0.31s;
+}
+
+.body main .newButton {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 70% 30%;
+      grid-template-columns: 70% 30%;
+  grid-column-gap: -1em;
+}
+
+.body main .newButton .newSocial {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (33%)[3];
+      grid-template-columns: repeat(3, 33%);
+  text-align: right;
+  grid-column-gap: 0.4em;
+}
+
+.body main .newButton .newSocial a {
+  display: block;
+  padding: 0;
+  background-color: transparent;
+  border: 1.7px solid white;
+  width: 9.3vw;
+  border-radius: 4px;
+  padding: 7px 3px;
+  font-family: "Maison Neue", sans-serif;
+  font-weight: bolder;
+  cursor: pointer;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.body main .newButton .newSocial a button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.body main .newButton .socialLink {
+  display: -ms-grid;
+  display: grid;
+  padding: 7px 3px;
+  text-align: right;
+  grid-column-gap: 0.4em;
+  -ms-grid-columns: (20%)[4];
+      grid-template-columns: repeat(4, 20%);
+}
+
+.body main .newButton .socialLink a {
+  display: inline-block;
+}
+
+.body main .newButton .socialLink a img {
+  width: 60%;
 }
 
 body .form {
@@ -192,6 +255,7 @@ body .form button {
   }
   .body main p {
     width: 70%;
+    text-align: left;
   }
   .body main h1 {
     text-align: left;
@@ -199,6 +263,23 @@ body .form button {
   .body main b {
     text-align: left;
     display: block;
+  }
+  .body main .newButton {
+    width: 70%;
+  }
+  .body main .newButton .newSocial {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (30%)[3];
+        grid-template-columns: repeat(3, 30%);
+    text-align: left;
+    grid-column-gap: 1em;
+  }
+  .body main .newButton .newSocial a {
+    width: 12vw;
+  }
+  .body main .newButton .socialLink a img {
+    width: 70%;
   }
   body .form {
     width: 70%;
@@ -225,42 +306,82 @@ body .form button {
     left: 3vw;
     top: 10vh;
   }
-  body main {
+  body .body main {
     padding-left: 1em;
   }
-  body main b {
+  body .body main b {
     text-align: left;
     display: inline-block;
   }
-  body main h1 {
+  body .body main h1 {
     text-align: left;
+    font-size: 40px;
   }
-  body main b {
+  body .body main b {
     text-align: left;
     padding: 0;
     margin: 0;
     display: block;
   }
-  body main p {
+  body .body main p {
     text-align: left;
-    width: 70%;
-  }
-  body main .button button {
     width: 100%;
   }
-  body main .button a {
+  body .body main .button button {
+    width: 100%;
+  }
+  body .body main .button a {
     display: block;
   }
-  body main .social {
-    display: none;
-  }
-  body main .social a {
+  body .body main .newButton {
     display: block;
-    margin-right: 2em;
+    -ms-grid-columns: 70% 30%;
+        grid-template-columns: 70% 30%;
+    grid-column-gap: -1em;
   }
-  body main .social a img {
+  body .body main .newButton .newSocial {
+    display: block;
+    -ms-grid-columns: (33%)[3];
+        grid-template-columns: repeat(3, 33%);
+    text-align: right;
+    grid-column-gap: 0.4em;
+  }
+  body .body main .newButton .newSocial a {
+    display: block;
+    padding: 0;
+    background-color: transparent;
+    border: 1.7px solid white;
+    width: 50.3vw;
+    margin: 1em 0;
+    border-radius: 4px;
+    padding: 7px 3px;
+    font-family: "Maison Neue", sans-serif;
+    font-weight: bolder;
+    cursor: pointer;
+    font-weight: lighter;
+    text-align: center;
+  }
+  body .body main .newButton .newSocial a button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  body .body main .newButton .socialLink {
+    display: -ms-grid;
+    display: grid;
+    padding: 7px 3px;
+    text-align: left;
+    grid-column-gap: 0;
+    -ms-grid-columns: (16%)[4];
+        grid-template-columns: repeat(4, 16%);
+  }
+  body .body main .newButton .socialLink a {
     display: inline-block;
-    margin-right: 60px;
+    padding: 0;
+  }
+  body .body main .newButton .socialLink a img {
+    width: 40%;
   }
 }
 /*# sourceMappingURL=index.css.map */
