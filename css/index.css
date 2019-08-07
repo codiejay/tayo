@@ -4,8 +4,8 @@
 }
 
 .body {
-  background: -webkit-gradient(linear, right top, left top, color-stop(40%, #4747479c), to(rgba(240, 240, 240, 0.192))), url("../tayoStanding-min.jpg");
-  background: linear-gradient(to left, #4747479c 40%, rgba(240, 240, 240, 0.192)), url("../tayoStanding-min.jpg");
+  background: -webkit-gradient(linear, right top, left top, color-stop(40%, #4747476c), to(rgba(240, 240, 240, 0.192))), url("../newHead-min.jpg");
+  background: linear-gradient(to left, #4747476c 40%, rgba(240, 240, 240, 0.192)), url("../newHead-min.jpg");
   background-position: top;
   background-size: cover;
   padding-right: 10vw;
@@ -240,13 +240,16 @@ body .form button {
 
 /* Tablet */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  body {
+    background: #1a1a1a;
+  }
   .body {
-    background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../tayoStanding.jpg");
-    background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../tayoStanding.jpg");
-    background-position: center;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../newHead-min.jpg");
+    background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../newHead-min.jpg");
+    background-position-y: -430px;
+    background-position-x: 20%;
     background-size: cover;
     display: inline-block;
-    height: auto;
     background-repeat: no-repeat;
     height: 100vh;
   }
@@ -290,8 +293,8 @@ body .form button {
 /* Mobile */
 @media (min-width: 320px) and (max-width: 480px) {
   .body {
-    background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../tayoStanding-min.jpg");
-    background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../tayoStanding-min.jpg");
+    background: -webkit-gradient(linear, right top, left top, from(rgba(41, 40, 40, 0.459)), to(rgba(90, 89, 89, 0.589))), url("../newHead-min.jpg");
+    background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589)), url("../newHead-min.jpg");
     background-position: left;
     background-size: cover;
     display: inline-block;

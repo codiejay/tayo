@@ -14,11 +14,11 @@ $poppins: 'Poppins', sans-serif;;
 
 
 .body{
-    background: linear-gradient(to left, #4747479c  40%, rgba(240, 240, 240, 0.192) ) , url("../tayoStanding-min.jpg");
-    background-position: center;
+    background: linear-gradient(to left, #4747476c  40%, rgba(240, 240, 240, 0.192) ) , url("../newHead-min.jpg");
+    background-position: top;
     background-size: cover;
     padding-right: 10vw;
-    padding-top: 13vh;
+    padding-top: 20vh;
     text-align: center;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -36,34 +36,41 @@ $poppins: 'Poppins', sans-serif;;
 
 
     main{
-       text-align: right;
+       text-align: left;
+       padding-left: 1em;
     //    display: none;
     
         h1{
             font-family: "Times New Roman", Times, serif;
-            font-size: 4em;
+            font-size: 87px;
             font-weight: lighter;
             color: white;
+            text-align: left;
         }
 
         b{
             font-size: 1.3em;
             color: white;
+            text-align: left;
+            display: block;
+            letter-spacing: 2px;
             font-family: "Maison Neue", sans-serif;
         }
 
         p{
             font-family: "Maison Neue", sans-serif;
             color: white;
-            font-size: 1.3em;
+            font-size: 15px;
             line-height: 1.52em;
             margin: 2em 0;
             text-align: left;
+          
         }
 
         .button{
-           width: 80%;
-           text-align: left;
+           width: 10     0%;
+           text-align: right;
+           margin: initial 0;
            
            button{
             background-color: transparent;
@@ -82,7 +89,7 @@ $poppins: 'Poppins', sans-serif;;
             display: grid;
             grid-template-columns: repeat(4, 6%);
             grid-column-gap: 3px;
-            text-align: left;
+            text-align: right;
 
             &:hover a{
                 opacity: 0.5;
@@ -97,6 +104,7 @@ $poppins: 'Poppins', sans-serif;;
             a{
                 display: block;
 
+
                 &:hover{
                     opacity: 1;
                     transform: scale(1.2);
@@ -106,6 +114,58 @@ $poppins: 'Poppins', sans-serif;;
         }
     
 
+        .newButton{
+            display: grid;
+            grid-template-columns: 70% 30%;
+            grid-column-gap: -1em;
+
+            .newSocial{
+                display: grid;
+                grid-template-columns: repeat(3, 33%);
+                text-align: right;
+                grid-column-gap: 0.4em;
+
+                a{
+                    display: block;
+                    padding: 0;
+                    background-color: transparent;
+                    border: 1.7px solid rgb(255, 255, 255);
+                    width: 9.3vw;
+                    border-radius: 4px;
+                    padding: 7px 3px;
+                    font-family: "Maison Neue", sans-serif;
+                    font-weight: bolder;
+                    cursor: pointer;
+                    font-weight: lighter;
+                    text-align: center;
+
+                    button{
+                       background-color: transparent;
+                       border: none;
+                       color: white;
+                       cursor: pointer;
+                    }
+                    
+                }
+            }
+
+            .socialLink{
+
+                display: grid;
+                padding: 7px 3px;
+                text-align: right;
+                grid-column-gap: 0.4em;
+                grid-template-columns: repeat(4, 20%);
+
+                a{
+                    display: inline-block;
+
+                    img{
+                        width: 60%
+                    }
+                }
+            }
+        }
        
     
       
@@ -138,6 +198,11 @@ body{
                 text-align: left;
                 line-height: 1.5em;
                 font-size: 1.2em;
+              
+
+                b{
+                    display: block;
+                }
             }
     
         }
@@ -209,14 +274,19 @@ body{
 /* Tablet */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
 
+    body{
+       background: #1a1a1a
+    }
+
     .body{
-        background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589) ) , url("../tayoStanding.jpg");
-        background-position: center;  
+        background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589) ) , url("../newHead-min.jpg");
+        background-position-y: -430px;  
+        background-position-x: 20%;
         background-size: cover;
         display: inline-block;
-        height: auto;
         background-repeat: no-repeat;
         height: 100vh;
+       
 
         main{
 
@@ -224,6 +294,7 @@ body{
 
             p{
                 width: 70%;
+                text-align: left;
             }
 
             h1{
@@ -235,8 +306,30 @@ body{
                 display: block;
             }
 
+            .newButton{
+                width: 70%;
+
+                .newSocial{
+                    display: grid;
+                    grid-template-columns: repeat(3, 30%);
+                    text-align: left;
+                    grid-column-gap: 1em;
+
+                    a{
+                        width: 12vw;
+                    }
+                }
+
+                .socialLink{
+                    a{
+                        img{
+                            width: 70%;
+                        }
+                    }
+                }
+            }
            
-        }
+        }           
 
 
     }
@@ -256,7 +349,7 @@ body{
 @media (min-width: 320px) and (max-width: 480px) {
 
     .body{
-        background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589) ) , url("../tayoStanding.jpg");
+        background: linear-gradient(to left, rgba(41, 40, 40, 0.459), rgba(90, 89, 89, 0.589) ) , url("../newHead-min.jpg");
         background-position: left;
         background-size: cover;
         display: inline-block;
@@ -274,8 +367,10 @@ body{
             top: 10vh;
         }
 
+        .body{
         main{
             padding-left: 1em;
+           
     
             b{
                 text-align: left;
@@ -284,6 +379,19 @@ body{
     
             h1{
                 text-align: left;
+                font-size: 40px;
+            }
+
+            b{
+                text-align: left;
+                padding: 0;
+                margin: 0;
+                display: block;
+            }
+
+            p{
+                text-align: left;
+                width: 100%;
             }
     
             .button{
@@ -291,15 +399,67 @@ body{
                 button{
                     width: 100%;
                 }
+
+                a{
+                   
+                    display: block;
+                }
             }
     
-            .social  {
+          
+             .newButton{
                 display: block;
-                a {
-                   display: block;
-                   margin-right: 2em;
+                grid-template-columns: 70% 30%;
+                grid-column-gap: -1em;
+    
+                .newSocial{
+                    display: block;
+                    grid-template-columns: repeat(3, 33%);
+                    text-align: right;
+                    grid-column-gap: 0.4em;
+    
+                    a{
+                        display: block;
+                        padding: 0;
+                        background-color: transparent;
+                        border: 1.7px solid rgb(255, 255, 255);
+                        width: 50.3vw;
+                        margin: 1em 0;
+                        border-radius: 4px;
+                        padding: 7px 3px;
+                        font-family: "Maison Neue", sans-serif;
+                        font-weight: bolder;
+                        cursor: pointer;
+                        font-weight: lighter;
+                        text-align: center;
+    
+                        button{
+                           background-color: transparent;
+                           border: none;
+                           color: white;
+                           cursor: pointer;
+                        }
+                        
+                    }
                 }
-                
+    
+                .socialLink{
+    
+                    display: grid;
+                    padding: 7px 3px;
+                    text-align: left;
+                    grid-column-gap: 0;
+                    grid-template-columns: repeat(4, 16%);
+    
+                    a{
+                        display: inline-block;
+                        padding: 0;
+    
+                        img{
+                            width: 40%
+                        }
+                    }
+                }
             }
         }
     }
@@ -308,5 +468,5 @@ body{
 
     
        
-    }
+}}
 
